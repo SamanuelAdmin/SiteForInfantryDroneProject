@@ -1,5 +1,13 @@
 # SiteForInfantryDroneProject
 
+My first project of big webapp, which i has been created by myself.
+
+Here I used <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a> (the most simple web framework for back-end and front-end developing on <a href="www.python.org">Python 3.X.X</a>) to create main webapp server.
+You can install Flask using:
+```
+pip3 install Flask
+```
+command.
 
 ## Some screenshots
 
