@@ -1,6 +1,8 @@
-# SiteForInfantryDroneProject
+# Web app for Infantry Drone project
 
-My first project of big webapp, which i has been created by myself.
+My first project of comercial webapp for Infantry Drone project (special for Ukraine military), which i has been created by myself.
+
+<br>
 
 Here I used <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a> (the most simple web framework for back-end and front-end developing on <a href="www.python.org">Python 3.X.X</a>) to create main webapp server.
 You can install Flask using:
@@ -8,6 +10,8 @@ You can install Flask using:
 pip3 install Flask
 ```
 command.
+
+<br>
 
 ## Some screenshots
 
@@ -21,5 +25,7 @@ command.
 <br>
 
 <div style="display: flex;">
-  
+  <img style="width: 500px" src="https://github.com/SamanuelAdmin/SiteForInfantryDroneProject/assets/68198268/da0a7fee-f05b-41ab-94d4-d66d8b346650">
+  <img style="width: 500px" src="https://github.com/SamanuelAdmin/SiteForInfantryDroneProject/assets/68198268/ddcbb45c-6516-46bd-aa42-cd443b920045">
+  <img style="width: 500px" src="https://github.com/SamanuelAdmin/SiteForInfantryDroneProject/assets/68198268/1e95a90c-f56a-4745-86fc-6c928326c839">
 </div>
