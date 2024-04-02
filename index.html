@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<title>Штурмовий дрон</title>
+</head>
+<body>
+<!-- 	<div class="navigation">
+		<div class="nav-content">
+			<a href="#mainpage" class="selected">Головна</a>
+			<a href="#params">Параметри</a>
+			<a href="#mainpage">Про проєкт</a>
+			<a href="#mainpage">Контакти</a>
+		</div>
+	</div> -->
+
+	<header id="mainpage">
+		<video-container>
+			<video autoplay muted loop id="header-video" class="header-video">
+				<source src="{{ url_for('static', filename='hvideo.mp4') }}" type="video/mp4">
+			  	<!-- <source src="hvideo.webm" type="video/webm"> -->
+				<h1>Your browser does not support the video tag.</h1>
+			</video>
+		</video-container>
+
+		<div class="info">
+			<h1 class="main-title">Штурмовий піхотний дрон</h1>
+			
+			<div class="preview">
+				<div class="item right one">
+					<li class="title">Універсальний</li>
+					<p class="description">Конструкція дозволяє встановити будь який кулимет під різний калібр.</p>
+				</div>
+				<div class="item left two">
+					<li class="title">Автономний</li>
+					<p class="description">Запас ходу - до 25км, запас АКБ - до 10 год. <br>Радіус дії - до 8км.</p>
+				</div>
+				<div class="item right three">
+					<li class="title">Точний</li>
+					<p class="description">Технологічні камери допомагають вести прицільний вогонь на дистанції понад 600м.</p>
+				</div>
+				<div class="item left four">
+					<li class="title">Практичний</li>
+					<p class="description">Каркас має здатність до перебудови під різні бойові задачі.</p>
+				</div>
+				<div class="item right five">
+					<li class="title">Потужний</li>
+					<p class="description">Оновлена рухова система може перевозити вантаж понад 300кг.</p>
+				</div>
+				<div class="item left six">
+					<li class="title">Зручний</li>
+					<p class="description">Інтуїтивно зрозуміла панель керування дає можливість ознайомитися з керуванням за мінімально короткий час.</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="content">
+			<div class="content-section section-one">
+				<h1 class="section-one-title section-title">Унікальність проекту</h1>
+
+				<div class="section-one-content">
+					<div class="description">
+						<sp>При проектувані та розробці було <noted2>приділено особливу увагу універальності</noted2> дрона у використанні та <noted2>легкістю в обслуговуванні</noted2>. Це дозволяє модифікувати дрон під широкий спектор задач. Також це дає можливість <noted2>встановлювати будь яку зброю.</noted2> та проводити тех. обслуговування за допомогою того, що є під рукою.</sp>
+					</div>
+
+					<div class="params">
+						<div class="item">
+							<p class="title"><img src="{{ url_for('static', filename='icons/bullet-icon.png') }}" class="icon"> 12.7</p>
+							<p class="text">максимальний калібр зброї</p>
+						</div>
+						<div class="item">
+							<p class="title"><img src="{{ url_for('static', filename='icons/weight-icon.png') }}" class="icon"> 300+</p>
+							<p class="text">кг корисної ваги</p>
+						</div>
+						<div class="item">
+							<p class="title"><img src="{{ url_for('static', filename='icons/clock-icon.png') }}" class="icon"> 6-10</p>
+							<p class="text">год автономної роботи</p>
+						</div>
+						<div class="item">
+							<p class="title"><img src="{{ url_for('static', filename='icons/distance-icon.png') }}" class="icon"> 20-25</p>
+							<p class="text">км запас ходу</p>
+						</div>
+						<div class="item">
+							<p class="title"><img src="{{ url_for('static', filename='icons/self-weight-icon.png') }}" class="icon"> 270</p>
+							<p class="text">кг власної ваги</p>
+						</div>
+						<div class="item">
+							<p class="title"><img src="{{ url_for('static', filename='icons/bullets-count-icon.png') }}" class="icon"> 1000</p>
+							<p class="text">патрон (до 12.7) ємність</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-section section-two">
+				<div class="section-two-description">
+					<a class="model-container" href="/model.png" target="_blank">
+						<img src="{{ url_for('static', filename='model.png') }}" class="model">
+					</a>
+
+					<img src="{{ url_for('static', filename='model.png') }}" class="hidden-model">
+
+
+					<div class="right-text">
+						<div class="item">
+							<img src="{{ url_for('static', filename='icons/speed-icon.png') }}" class="icon">
+							<p class="description">Має 2 швидкості - 2.5 та 5 км/год (середня швидкість штурмовика у повному боєспорядженні)</p>
+						</div>
+						<div class="item">
+							<img src="{{ url_for('static', filename='icons/mountain-icon.png') }}" class="icon">
+							<p class="description">Долає перешкоди до 30 см в висоту та нахилу до 40°.</p>
+						</div>
+<!-- 						<div class="item">
+							<img src="{{ url_for('static', filename='icons/whater-icon.png') }}" class="icon">
+							<p class="description">Конструкція захищена від дождю та випадкового потрапляння води.</p>
+						</div> -->
+						<div class="item">
+							<img src="{{ url_for('static', filename='icons/bulletproof-icon.png') }}" class="icon">
+							<p class="description">Брюня витримує влучання калібру до 7.62х51.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="">
+
+			<div class="content-section section-three">
+				<div class="section-three-description">
+					<div class="main-text">
+						<h1 class="title">Тільки сучасні та якісні компоненти</h1>
+
+						<p class="description">При проектуванні та збірці ми використовуємо <noted2>тільки передові рішення</noted2>. Це дозволяє <noted2>змінювати кострукцію під конкретні зада</noted2> не боячись технічних обмежень.</p>
+
+						<div class="add">
+							<p class="text">Також є можливість обрати комплектуючі під особисті потреби та унікальні задачі.</p>
+
+							<a class="get-help">
+								<p>Задати питання</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="cam-image"></div>
+					<img src="{{ url_for('static', filename='orange-pi-photo.png') }}" class="orange-pi-image">
+
+					<div class="params">
+						<div class="item">
+							<div class="title">30x</div>
+							<div class="description">оптичний зум основної камери</div>
+						</div>
+						<div class="item">
+							<div class="title">OPi 5</div>
+							<div class="description">бортовий комп'ютер</div>
+						</div>
+						<div class="item">
+							<div class="title">Ratel 2</div>
+							<div class="description">додаткова камера</div>
+						</div>
+						<div class="item">
+							<div class="title">600</div>
+							<div class="description">м ведення прицільного вогню</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="content-section section-four">
+				<h1 class="section-title section-four-title">Про нас</h1>
+
+				<div class="section-four-description">
+					<iframe src="https://www.youtube.com/embed/UngBHzRzVYE?si=XGXZQVmqkU0Vw7xa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+					<iframe src="https://www.youtube.com/embed/YuAAh1V0d3s?si=Q-a36k1hTh2kq-Q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="content-section section-contacts">
+				<div class="section-contacts-content">
+					<div class="contact-photo"></div>
+
+					<div class="contact-info">
+						<div class="title">
+							<h1 class="name">Олександр</h1>
+							<p class="description">головний розробник</p>
+						</div>
+
+						<div class="info">
+							<div class="number">
+								<i class='bx bx-phone-call'></i>
+								<p>+38 (050) 362 39 16</p>
+							</div>
+							<div class="email">
+								<p>ukrweaponcom@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="contacts">
+				<a href="tel:+380503623916">+38 (050) 362 39 16</a>
+				<a href="tel:+380679091128">+38 (067) 909 11 28</a>
+			</div>
+
+			<a class="email" href="mailto:ukrweaponcom@gmail.com">
+				ukrweaponcom@gmail.com
+			</a>
+		</div>
+	</div>
+</body>
+</html>
